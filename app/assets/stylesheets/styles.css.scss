@@ -1,0 +1,36 @@
+
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+	/* this is where you can change the font for the entire website*/
+$btnPrimaryBackgroundHighlight: lightblue;
+$btnPrimaryBackground: gray;
+
+$navbarBackgroundHighlight: white;
+$navbarBackground: lightblue;
+
+@import 'bootstrap';
+
+body 
+	{
+	padding-top: 60px;
+	}
+
+
+@import 'bootstrap-responsive';
+
+
+/*.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+This is to get rid of the outline for the navbar on top
+*/
+
+.footer {
+	margin-top: 200px;
+	color: $grayLight;
+a {
+	color: $gray;
+}
+}
