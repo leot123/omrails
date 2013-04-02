@@ -1,11 +1,68 @@
+<% if user_signed_in? %>
+  <h1> You're Logged in! </h1>
+<% else %>
+
 <div class="hero-unit">
-<h1>Hoplite</h1>
+<h1>Game Changer</h1>
+
 <p>
-	You've found the home page for the 
+	The product is still in development.  
 	<%= link_to "one month rails", "http://onemonthrails.com" %>
 	application.
 </p>
 <p> 
-	<%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-large" %>
+	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 </p>
 </div>
+<% end %>
+
+
+
+
+
+
+
+<!-- I added these drop down menues below -->
+
+<!-- <div class="pull-right">
+<div class="row">
+<div class="span3">
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Charities
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+        List of Charities
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Websites onboard
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        List of affiliated websites
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div> -->
+
+
+
+
+
+
+
+
+ 
+
+

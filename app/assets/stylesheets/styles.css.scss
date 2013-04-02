@@ -1,13 +1,15 @@
 
-$baseFontFamily: Oxygen;
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
+/*$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 
-	/* this is where you can change the font for the entire website*/
+/*this is where you can change the font for the entire website*/
+
+/*These are for the navigation bar on top and the button*/
 $btnPrimaryBackgroundHighlight: lightblue;
 $btnPrimaryBackground: gray;
-
 $navbarBackgroundHighlight: white;
 $navbarBackground: lightblue;
+$bodyBackground: white;
 
 @import 'bootstrap';
 
