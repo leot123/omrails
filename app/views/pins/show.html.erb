@@ -4,11 +4,11 @@
 		<p>
 		  <b>Description:</b>
 		  <%= @pin.description %>
-		</p>
+		</p>		
+<%= link_to 'Edit', edit_pin_path(@pin) %> |
+<%= link_to 'Back', pins_path %>
 		</div>
 	</div>
 </div>
 
 
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<%= link_to 'Back', pins_path %>
