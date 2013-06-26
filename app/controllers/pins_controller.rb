@@ -1,4 +1,4 @@
-class PinsController < ApplicationController
+ class PinsController < ApplicationController
   # GET /pins
   # GET /pins.json
   def index
