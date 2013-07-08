@@ -1,4 +1,6 @@
 Omrails::Application.routes.draw do
+  get "pages/home"
+
   resources :pins
 
 
@@ -6,6 +8,7 @@ Omrails::Application.routes.draw do
 
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
+  get 'charities' => 'pages#charities'
   root :to => 'Pages#home'
 
   # The priority is based upon order of creation:
