@@ -1,0 +1,65 @@
+<!--
+CREATING PAGES
+How to add pages
+			First step is to create a controller for our pages 
+			rails aps are broken into three parts 
+			1. controllers
+						pages you can show users. 
+						to have ownership over pages the controller deals with the actions
+
+CODE: $ rails generate controller Pages home             
+
+
+# Create a Pages controller with a home action
+create  app/controllers/pages_controller.rb
+       route  get "pages/home"
+      invoke  erb
+      create    app/views/pages
+      create    app/views/pages/home.html.erb
+      invoke  test_unit
+      create    test/functional/pages_controller_test.rb
+      invoke  helper
+      create    app/helpers/pages_helper.rb
+      invoke    test_unit
+      create      test/unit/helpers/pages_helper_test.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/pages.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/pages.css.scss
+
+
+
+$ rm public/index.html                                        # public/index.html will automatically override any root route set
+
+				2. views- this is what you view
+when you create a page in sublime text and save it under pages under views, the program knows the layout allows you to change all pages so that every page has a "home" "about" link so you don't have to individually add every single one 
+
+
+Layout
+				everything in layout is actually on every page. however, the yield part is where everything under the home or about tabs goes in. where all the coding goes in
+
+
+				3. models
+				$ rails generate controller Pages home  
+				this will allow you to open http://localhost:3000/pages/home because this command we ran creates a route for this
+Find me in app/views/pages/home.html.erb
+you might need to restart subl if you already have it open
+
+this command also created a controller  under app/controller/pages controller
+it created a controller
+its defined the controller at the top and bottom of the file
+and withint it defines the home action and where the action ends 
+route file under config/routes.rb and created 
+get "pages/home"
+there is a home action adn a home view
+the route file is a file in the application that when people issue a command like try to go to a specific url, it will figure out which action under which controller it should be sending them to. 
+in the get "pages/home" case the pages is the controller and home is the action and the home.html.erb is the view it should be loading
+we want to set "pages/home" as the root of the application which meansthat when someone goes to the basic url that they will end up at the home page. 
+so we delete get "pages/home" abecause what we really want is to set the root
+under the hints it states
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+		we need to delete public/index.html which is the standard default page every project comes with.  as long as this exists, it will override any route
+  # root :to => 'welcome#index'
+		after removing the public index then we have to change the welcome controller casue we dont have on. because right now it is trying to get to the welcome controller but it cant and instead of index our pages controller has a home action to add a new page we could have passed another command page but we can also do it costum
