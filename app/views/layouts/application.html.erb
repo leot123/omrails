@@ -22,13 +22,13 @@
 
 <!--the header is in the partial under _header.html.erb as well as the footer. 
 
-<%= link to “home”, root_path %>
-<%= link to “about”, about_path %>
+ link to “home”, root_path %>
+link to “about”, about_path %>
 	the _path is rails code 
 
 In order to avoid repetitive coding on every page (eg if every page is going to have the same footer or header) th ebest thing to do is to put it under LAYOUTS
 
 application.html.erb is loaded for every single page
-	<%= yield%> this yield call is where rails actuallky takes the content of the views and spits it in. 
+	yield this yield call is where rails actuallky takes the content of the views and spits it in. 
 	rails is putting the same stuff in the head and pitting it in where the yield is.
 so one way to get rid of repetitive headers and footers on all your pages is to put them in the application file!>
