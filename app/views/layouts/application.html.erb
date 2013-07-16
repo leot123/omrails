@@ -8,6 +8,8 @@
 	</head>
 	<body>
 			<%= render 'layouts/header' %>
+
+<!-- the div class container is the bootstrap code that makes the page fixed or fluid and responsive-->
 		<div class="container">
 			<% flash.each do |name, msg| %>
 				<%= content_tag(:div, msg, class: "alert alert-#{name}") %>

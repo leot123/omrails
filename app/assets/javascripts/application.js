@@ -1,4 +1,10 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
+// you have to require the gemfiles you want to include here before/after bundle installing them.
+//This will allow us to use some of the bootstrap javascript. 
+//			on the boostrap site. it lists a bunch of javascript features you can use. like under scaffolding.
+
+
+
+//This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
@@ -14,3 +20,4 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
