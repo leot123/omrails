@@ -1,5 +1,8 @@
 <!--
 CREATING PAGES
+
+ 
+
 How to add pages
 			First step is to create a controller for our pages 
 			rails aps are broken into three parts 
@@ -63,3 +66,8 @@ under the hints it states
 		we need to delete public/index.html which is the standard default page every project comes with.  as long as this exists, it will override any route
   # root :to => 'welcome#index'
 		after removing the public index then we have to change the welcome controller casue we dont have on. because right now it is trying to get to the welcome controller but it cant and instead of index our pages controller has a home action to add a new page we could have passed another command page but we can also do it costum
+
+
+Boostrap- one bootstrap feature is that is that when the page shrinks, the tab appears to move the stuff in the navbar into a list.
+  - the reason why the expanding and contracting thing works, is because we added the javascript =require bootstrap  under javascript/application.js
+

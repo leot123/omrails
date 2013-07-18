@@ -13,6 +13,8 @@ $bodyBackground: white;
 
 @import 'bootstrap';
 
+
+/*this pushes the body on all pages down 60px so it doesnt conflict with the navbar*/
 body 
 	{
 	padding-top: 60px;
@@ -29,7 +31,16 @@ body
 This is to get rid of the outline for the navbar on top
 */
 
+
+
+/*attempting to change colors of header*/
+/*.header{
+	margin-bottom: 200px;*/
+
+
+
 .footer {
+	
 	margin-top: 200px;
 	color: $grayLight;
 a {

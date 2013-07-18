@@ -1,4 +1,6 @@
- <div class="navbar navbar-fixed-top">
+<div class="header">
+  <!-- this navbar-fixed-top is bootstrap code to keep the navbar on top of the page but we need to make an adjustment so that things dont get underneat it, so we have to go into styles.css.scss and ad to the body tag -->
+ <div class="navbar navbar-fixed-top"> 
   <div class="navbar-inner">
     <div class="container">
  
@@ -10,7 +12,7 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <%= link_to "Coming Soon...", root_path, class: "brand" %>
+      <%= link_to "Hoplite123", root_path, class: "brand" %>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
@@ -20,6 +22,8 @@
       <li><%= link_to "Charities", charities_path %></li>
 		  <li><%= link_to "Contact Us", contact_path %></li>
 		</ul>
+
+    <!--this is for the sign in feature  -->
 		<ul class="nav pull-right">
       <% if user_signed_in? %>
 		  <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
@@ -32,4 +36,5 @@
 
     </div>
   </div>
+</div>
 </div>
